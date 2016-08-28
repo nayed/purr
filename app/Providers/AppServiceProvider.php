@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Purr\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
