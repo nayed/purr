@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="{{ elixir('css/app.css') }}">
 </head>
 <body>
-    <div class="container">
-        <example></example>
-    </div>
+<div class="container">
+    <div id="app"></div>
+</div>
     <script type="text/javascript" src="{{ elixir('js/app.js') }}"></script>
 </body>
 </html>

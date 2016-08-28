@@ -12,11 +12,8 @@
 */
 
 Route::get('/', function () {
-    return redirect('cats');
-});
-
-Route::get('about', function() {
-    return view('about')->with('numberOfCats', Purr\Models\Cat::count());
+    //return redirect('cats');
+    return view('welcome');
 });
 
 Route::get('cats', function() {
