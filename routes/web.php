@@ -12,5 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('cats');
 });
+
+Route::get('about', function() {
+    return view('about')->with('numberOfCats', Purr\Models\Cat::count());
+});
+
+Route::get('cats', function() {
+    return 'All cats';
+});
+
+Route::get('cats/{id}', function($id) {
+    return sprintf('Cat #%s', $id);
+})->where('id', '[0-9]+');
