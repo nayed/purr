@@ -20,3 +20,7 @@ use Illuminate\Http\Request;
 Route::get('about', function() {
     return ['numberOfCats' => Purr\Models\Cat::count()];
 });
+
+Route::resource('cats', 'CatController', ['only' => ['index', 'show']]);
+
+Route::get('cats/breeds/{name}', 'BreedController@show');

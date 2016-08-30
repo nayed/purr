@@ -15,11 +15,3 @@ Route::get('/', function () {
     //return redirect('cats');
     return view('welcome');
 });
-
-Route::get('cats', function() {
-    return 'All cats';
-});
-
-Route::get('cats/{id}', function($id) {
-    return sprintf('Cat #%s', $id);
-})->where('id', '[0-9]+');

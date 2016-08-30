@@ -26,6 +26,10 @@ class RouteServiceProvider extends ServiceProvider
         //
 
         parent::boot();
+
+        \Route::bind('name', function($name) {
+            return \Purr\Models\Breed::where('name', $name)->firstOrFail();
+        });
     }
 
     /**
