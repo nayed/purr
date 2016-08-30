@@ -1,5 +1,5 @@
 <template>
-    Look at dem cats
+    <p>Look at dem cats</p>
     <table class="u-full-width">
         <thead>
             <tr>
@@ -16,6 +16,8 @@
             </tr>
         </tbody>
     </table>
+    <br>
+    <a class="button button-primary u-pull-right" v-link="'create'">Add a new cat</a>
 </template>
 
 <script>

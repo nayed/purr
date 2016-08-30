@@ -6,6 +6,7 @@
                 <li class="six columns"><a v-link="'about'">About</a></li>
             </ul>
         </div>
+        <br>
         <router-view></router-view>
     </div>
 </template>

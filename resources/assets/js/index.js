@@ -17,7 +17,7 @@ router.map({
         component: require('./components/About.vue')
     },
     '/cats': {
-        component: require('./components/Cats.vue')
+        component: require('./components/Cats/index.vue')
     }
 })
 

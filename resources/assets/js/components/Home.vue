@@ -1,9 +1,9 @@
 <template>
-    <div class="twelve columns center">
-        Welcome Cats Lovers!
+    <div class="twelve columns">
+        <p>Welcome Cats Lovers!</p>
     </div>
 
-    <a v-link="'cats'">List All cats</a>
+    <p><a v-link="'cats'">List of all cats</a></p>
 </template>
 
 <style>
