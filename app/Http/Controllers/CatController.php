@@ -24,6 +24,7 @@ class CatController extends Controller
 
     public function show(Cat $cat)
     {
+        $cat->push('breed', $cat->breed->name);
         return ['cat' => $cat];
     }
 }

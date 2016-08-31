@@ -10,7 +10,7 @@
         </thead>
         <tbody>
             <tr v-for="cat in cats">
-                <td>{{ cat.name }}</td>
+                <td><a v-link="{ path: '/cats/' + cat.id }">{{ cat.name }}</a></td>
                 <td>{{ cat.date_of_birth }}</td>
                 <td>{{ cat.breed.name }}</td>
             </tr>

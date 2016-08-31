@@ -18,6 +18,9 @@ router.map({
     },
     '/cats': {
         component: require('./components/Cats/index.vue')
+    },
+    '/cats/:id': {
+        component: require('./components/Cats/show.vue')
     }
 })
 
