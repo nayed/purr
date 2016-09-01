@@ -21,6 +21,6 @@ Route::get('about', function() {
     return ['numberOfCats' => Purr\Models\Cat::count()];
 });
 
-Route::resource('cats', 'CatController', ['only' => ['index', 'show']]);
+Route::resource('cats', 'CatController', ['except' => ['create', 'edit']]);
 
 Route::get('cats/breeds/{name}', 'BreedController@show');
